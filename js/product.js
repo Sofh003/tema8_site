@@ -1,4 +1,11 @@
-const id = 1528;
+console.log("hentet");
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+console.log("id:", id);
+
+//const id = 1528;
 const productURL = "https://kea-alt-del.dk/t7/api/products/" + id;
 const productcontainer = document.querySelector("#productContainer");
 
