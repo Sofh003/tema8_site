@@ -22,12 +22,12 @@ function show(data) {
                 <div class="container">
                     <h3>${data.brandname}</h3>
                     <p>${data.productdisplayname}</p>
-                    <p>${data.price}</p>
+                    <p>${data.price} kr.</p>
                     <a href="product.html" class="button">
 
-                        <p>Læg i kurv</p>
+                        Læg i kurv
                     </a>
-                    <p class="lagerstatus">Lagerstatus: 2</p>
+                    
                 </div>
             </div>
 

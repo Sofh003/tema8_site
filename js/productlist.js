@@ -37,7 +37,7 @@ function showProducts(products) {
               </p>
 
               <a href="product.html?id=${product.id}" class="button">
-                  <p class="p_btn">Læs mere</p>
+                  Læs mere
               </a>
           </div>
       </div>
