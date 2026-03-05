@@ -7,9 +7,9 @@
 header {
   position: sticky;
   top: 0;
-  background-color: #cc7b59;
+  background-color: #5d859f;
 
-  padding: 40px 100px;
+  padding: 20px 100px;
 
   display: flex;
   align-items: center;
@@ -20,24 +20,50 @@ header {
 /* Fonte  */
 h1 {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "pelago", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
   padding-top: 40px;
+  color: #20457b;
+}
+
+.h3_logo {
+  font-size: 35px;
+  color: aliceblue;
+  text-decoration: none;
 }
 
 h3 {
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "pelago", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
   padding-top: 5px;
+  padding-left: 15px;
+  color: #0c1a30;
 }
-
-p {
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.p_btn {
+  font-family: "pelago", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-family: "pelago", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0c1a30;
 }
+p {
+  font-family: "pelago", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  color: #0c1a30;
+}
+
 .discount {
   color: green;
 }
@@ -46,10 +72,6 @@ p {
   font-size: 14px;
 }
 
-.h3_logo {
-  font-size: 25px;
-  color: aliceblue;
-}
 /* Forside  */
 .container_forside {
   padding-top: 90px;
@@ -65,53 +87,55 @@ p {
 
 .card_forside:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(232, 200, 158);
+  background-color: rgb(237, 214, 184);
 }
 
 .card_forside {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  background-color: antiquewhite;
+  background-color: rgb(245, 231, 215);
   text-align: center;
   text-decoration: none;
-  color: black;
-  padding: 20px 40px;
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(23, 35, 65);
+  padding: 40px 50px;
+  font-family: "pelago", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
   padding-top: 5px;
 }
 
 /* Productlist  */
 .card_productlist {
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
 
   padding-block: 20px;
-  background-color: antiquewhite;
+  background-color: rgb(251, 241, 231);
   margin-top: 30px;
 }
 
 .card_productlist img {
   border-radius: 5px 5px 0 0;
-  width: 300px;
+  width: 350px;
   height: auto;
-  margin-left: 70px;
+  margin-left: 45px;
 }
 
 .container_productlist {
-  padding-top: 90px;
+  padding-top: 40px;
   padding-left: 50px;
   padding-right: 50px;
 }
 
 .button {
-  background-color: rgb(174, 73, 48);
+  background-color: rgb(124, 165, 189);
   border: none;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -119,6 +143,7 @@ p {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-left: 10px;
 }
 
 .button:hover {
@@ -156,6 +181,36 @@ p {
   padding-left: 15px;
 }
 
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: #b65959;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.soldout_badge {
+  background: black;
+}
+
+.card_productlist.onSale {
+  border: 2px solid #e19146;
+}
+
+.card_productlist.soldOut {
+  opacity: 0.6;
+}
+
+#productListContainer {
+  place-self: center;
+  align-content: center;
+  margin-top: 20px;
+}
 @media (min-width: 800px) {
   .cards_grid_forside {
     display: grid;
